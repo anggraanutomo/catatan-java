@@ -74,6 +74,16 @@ class ColorBox extends Box
     }
 }
 
+
+/*
+Output:
+
+Volume of mybox1 is 3000.0
+Weight of mybox1 is 34.3
+
+Volume of mybox2 is 24.0
+Weight of mybox2 is 0.076
+ */
 class DemoBoxWeight
 {
     public static void main(String[] args)
