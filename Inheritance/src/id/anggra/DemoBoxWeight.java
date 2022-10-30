@@ -60,12 +60,26 @@ class BoxWeight extends Box
     }
 }
 
+// Here, Box is extended to include color
+class ColorBox extends Box
+{
+    int color; // color of box
+
+    ColorBox(double w, double h, double d, int c)
+    {
+        width = w;
+        height = h;
+        depth = d;
+        color = c;
+    }
+}
+
 class DemoBoxWeight
 {
     public static void main(String[] args)
     {
-        BoxWeight mybox1 = new BoxWeight(10, 20, 15,34.3);
-        BoxWeight mybox2 = new BoxWeight(2, 3,4,0.076);
+        BoxWeight mybox1 = new BoxWeight(10, 20, 15, 34.3);
+        BoxWeight mybox2 = new BoxWeight(2, 3, 4, 0.076);
         double vol;
 
         vol = mybox1.volume();
